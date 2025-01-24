@@ -1,7 +1,685 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Useful sources</title><style>
+    /* cspell:disable-file */
+    /* webkit printing magic: print all background colors */
+    html {
+        -webkit-print-color-adjust: exact;
+    }
+    * {
+        box-sizing: border-box;
+        -webkit-print-color-adjust: exact;
+    }
+    
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    @media only screen {
+        body {
+            margin: 2em auto;
+            max-width: 900px;
+            color: rgb(55, 53, 47);
+        }
+    }
+    
+    body {
+        line-height: 1.5;
+        white-space: pre-wrap;
+    }
+    
+    a,
+    a.visited {
+        color: inherit;
+        text-decoration: underline;
+    }
+    
+    .pdf-relative-link-path {
+        font-size: 80%;
+        color: #444;
+    }
+    
+    h1,
+    h2,
+    h3 {
+        letter-spacing: -0.01em;
+        line-height: 1.2;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    
+    .page-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 0.75em;
+    }
+    
+    h1 {
+        font-size: 1.875rem;
+        margin-top: 1.875rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+        margin-top: 1.25rem;
+    }
+    
+    .source {
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        padding: 1.5em;
+        word-break: break-all;
+    }
+    
+    .callout {
+        border-radius: 3px;
+        padding: 1rem;
+    }
+    
+    figure {
+        margin: 1.25em 0;
+        page-break-inside: avoid;
+    }
+    
+    figcaption {
+        opacity: 0.5;
+        font-size: 85%;
+        margin-top: 0.5em;
+    }
+    
+    mark {
+        background-color: transparent;
+    }
+    
+    .indented {
+        padding-left: 1.5em;
+    }
+    
+    hr {
+        background: transparent;
+        display: block;
+        width: 100%;
+        height: 1px;
+        visibility: visible;
+        border: none;
+        border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    
+    @media only print {
+        img {
+            max-height: 100vh;
+            object-fit: contain;
+        }
+    }
+    
+    @page {
+        margin: 1in;
+    }
+    
+    .collection-content {
+        font-size: 0.875rem;
+    }
+    
+    .column-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .column {
+        padding: 0 1em;
+    }
+    
+    .column:first-child {
+        padding-left: 0;
+    }
+    
+    .column:last-child {
+        padding-right: 0;
+    }
+    
+    .table_of_contents-item {
+        display: block;
+        font-size: 0.875rem;
+        line-height: 1.3;
+        padding: 0.125rem;
+    }
+    
+    .table_of_contents-indent-1 {
+        margin-left: 1.5rem;
+    }
+    
+    .table_of_contents-indent-2 {
+        margin-left: 3rem;
+    }
+    
+    .table_of_contents-indent-3 {
+        margin-left: 4.5rem;
+    }
+    
+    .table_of_contents-link {
+        text-decoration: none;
+        opacity: 0.7;
+        border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+    }
+    
+    table,
+    th,
+    td {
+        border: 1px solid rgba(55, 53, 47, 0.09);
+        border-collapse: collapse;
+    }
+    
+    table {
+        border-left: none;
+        border-right: none;
+    }
+    
+    th,
+    td {
+        font-weight: normal;
+        padding: 0.25em 0.5em;
+        line-height: 1.5;
+        min-height: 1.5em;
+        text-align: left;
+    }
+    
+    th {
+        color: rgba(55, 53, 47, 0.6);
+    }
+    
+    ol,
+    ul {
+        margin: 0;
+        margin-block-start: 0.6em;
+        margin-block-end: 0.6em;
+    }
+    
+    li > ol:first-child,
+    li > ul:first-child {
+        margin-block-start: 0.6em;
+    }
+    
+    ul > li {
+        list-style: disc;
+    }
+    
+    ul.to-do-list {
+        padding-inline-start: 0;
+    }
+    
+    ul.to-do-list > li {
+        list-style: none;
+    }
+    
+    .to-do-children-checked {
+        text-decoration: line-through;
+        opacity: 0.375;
+    }
+    
+    ul.toggle > li {
+        list-style: none;
+    }
+    
+    ul {
+        padding-inline-start: 1.7em;
+    }
+    
+    ul > li {
+        padding-left: 0.1em;
+    }
+    
+    ol {
+        padding-inline-start: 1.6em;
+    }
+    
+    ol > li {
+        padding-left: 0.2em;
+    }
+    
+    .mono ol {
+        padding-inline-start: 2em;
+    }
+    
+    .mono ol > li {
+        text-indent: -0.4em;
+    }
+    
+    .toggle {
+        padding-inline-start: 0em;
+        list-style-type: none;
+    }
+    
+    /* Indent toggle children */
+    .toggle > li > details {
+        padding-left: 1.7em;
+    }
+    
+    .toggle > li > details > summary {
+        margin-left: -1.1em;
+    }
+    
+    .selected-value {
+        display: inline-block;
+        padding: 0 0.5em;
+        background: rgba(206, 205, 202, 0.5);
+        border-radius: 3px;
+        margin-right: 0.5em;
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+        white-space: nowrap;
+    }
+    
+    .collection-title {
+        display: inline-block;
+        margin-right: 1em;
+    }
+    
+    .page-description {
+        margin-bottom: 2em;
+    }
+    
+    .simple-table {
+        margin-top: 1em;
+        font-size: 0.875rem;
+        empty-cells: show;
+    }
+    .simple-table td {
+        height: 29px;
+        min-width: 120px;
+    }
+    
+    .simple-table th {
+        height: 29px;
+        min-width: 120px;
+    }
+    
+    .simple-table-header-color {
+        background: rgb(247, 246, 243);
+        color: black;
+    }
+    .simple-table-header {
+        font-weight: 500;
+    }
+    
+    time {
+        opacity: 0.5;
+    }
+    
+    .icon {
+        display: inline-block;
+        max-width: 1.2em;
+        max-height: 1.2em;
+        text-decoration: none;
+        vertical-align: text-bottom;
+        margin-right: 0.5em;
+    }
+    
+    img.icon {
+        border-radius: 3px;
+    }
+    
+    .user-icon {
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 100%;
+        margin-right: 0.5rem;
+    }
+    
+    .user-icon-inner {
+        font-size: 0.8em;
+    }
+    
+    .text-icon {
+        border: 1px solid #000;
+        text-align: center;
+    }
+    
+    .page-cover-image {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        max-height: 30vh;
+    }
+    
+    .page-header-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .page-header-icon-with-cover {
+        margin-top: -0.72em;
+        margin-left: 0.07em;
+    }
+    
+    .page-header-icon img {
+        border-radius: 3px;
+    }
+    
+    .link-to-page {
+        margin: 1em 0;
+        padding: 0;
+        border: none;
+        font-weight: 500;
+    }
+    
+    p > .user {
+        opacity: 0.5;
+    }
+    
+    td > .user,
+    td > time {
+        white-space: nowrap;
+    }
+    
+    input[type="checkbox"] {
+        transform: scale(1.5);
+        margin-right: 0.6em;
+        vertical-align: middle;
+    }
+    
+    p {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    
+    .image {
+        border: none;
+        margin: 1.5em 0;
+        padding: 0;
+        border-radius: 0;
+        text-align: center;
+    }
+    
+    .code,
+    code {
+        background: rgba(135, 131, 120, 0.15);
+        border-radius: 3px;
+        padding: 0.2em 0.4em;
+        border-radius: 3px;
+        font-size: 85%;
+        tab-size: 2;
+    }
+    
+    code {
+        color: #eb5757;
+    }
+    
+    .code {
+        padding: 1.5em 1em;
+    }
+    
+    .code-wrap {
+        white-space: pre-wrap;
+        word-break: break-all;
+    }
+    
+    .code > code {
+        background: none;
+        padding: 0;
+        font-size: 100%;
+        color: inherit;
+    }
+    
+    blockquote {
+        font-size: 1.25em;
+        margin: 1em 0;
+        padding-left: 1em;
+        border-left: 3px solid rgb(55, 53, 47);
+    }
+    
+    .bookmark {
+        text-decoration: none;
+        max-height: 8em;
+        padding: 0;
+        display: flex;
+        width: 100%;
+        align-items: stretch;
+    }
+    
+    .bookmark-title {
+        font-size: 0.85em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 1.75em;
+        white-space: nowrap;
+    }
+    
+    .bookmark-text {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bookmark-info {
+        flex: 4 1 180px;
+        padding: 12px 14px 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .bookmark-image {
+        width: 33%;
+        flex: 1 1 180px;
+        display: block;
+        position: relative;
+        object-fit: cover;
+        border-radius: 1px;
+    }
+    
+    .bookmark-description {
+        color: rgba(55, 53, 47, 0.6);
+        font-size: 0.75em;
+        overflow: hidden;
+        max-height: 4.5em;
+        word-break: break-word;
+    }
+    
+    .bookmark-href {
+        font-size: 0.75em;
+        margin-top: 0.25em;
+    }
+    
+    .sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+    .code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+    .serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+    .mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+    .pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+    .pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+    .pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+    .pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+    .pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+    .pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+    .pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+    .pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+    .pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+    .pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+    .pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+    .pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+    .pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+    .pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+    .pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+    .pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+    .highlight-default {
+        color: rgba(55, 53, 47, 1);
+    }
+    .highlight-gray {
+        color: rgba(120, 119, 116, 1);
+        fill: rgba(120, 119, 116, 1);
+    }
+    .highlight-brown {
+        color: rgba(159, 107, 83, 1);
+        fill: rgba(159, 107, 83, 1);
+    }
+    .highlight-orange {
+        color: rgba(217, 115, 13, 1);
+        fill: rgba(217, 115, 13, 1);
+    }
+    .highlight-yellow {
+        color: rgba(203, 145, 47, 1);
+        fill: rgba(203, 145, 47, 1);
+    }
+    .highlight-teal {
+        color: rgba(68, 131, 97, 1);
+        fill: rgba(68, 131, 97, 1);
+    }
+    .highlight-blue {
+        color: rgba(51, 126, 169, 1);
+        fill: rgba(51, 126, 169, 1);
+    }
+    .highlight-purple {
+        color: rgba(144, 101, 176, 1);
+        fill: rgba(144, 101, 176, 1);
+    }
+    .highlight-pink {
+        color: rgba(193, 76, 138, 1);
+        fill: rgba(193, 76, 138, 1);
+    }
+    .highlight-red {
+        color: rgba(212, 76, 71, 1);
+        fill: rgba(212, 76, 71, 1);
+    }
+    .highlight-default_background {
+        color: rgba(55, 53, 47, 1);
+    }
+    .highlight-gray_background {
+        background: rgba(241, 241, 239, 1);
+    }
+    .highlight-brown_background {
+        background: rgba(244, 238, 238, 1);
+    }
+    .highlight-orange_background {
+        background: rgba(251, 236, 221, 1);
+    }
+    .highlight-yellow_background {
+        background: rgba(251, 243, 219, 1);
+    }
+    .highlight-teal_background {
+        background: rgba(237, 243, 236, 1);
+    }
+    .highlight-blue_background {
+        background: rgba(231, 243, 248, 1);
+    }
+    .highlight-purple_background {
+        background: rgba(244, 240, 247, 0.8);
+    }
+    .highlight-pink_background {
+        background: rgba(249, 238, 243, 0.8);
+    }
+    .highlight-red_background {
+        background: rgba(253, 235, 236, 1);
+    }
+    .block-color-default {
+        color: inherit;
+        fill: inherit;
+    }
+    .block-color-gray {
+        color: rgba(120, 119, 116, 1);
+        fill: rgba(120, 119, 116, 1);
+    }
+    .block-color-brown {
+        color: rgba(159, 107, 83, 1);
+        fill: rgba(159, 107, 83, 1);
+    }
+    .block-color-orange {
+        color: rgba(217, 115, 13, 1);
+        fill: rgba(217, 115, 13, 1);
+    }
+    .block-color-yellow {
+        color: rgba(203, 145, 47, 1);
+        fill: rgba(203, 145, 47, 1);
+    }
+    .block-color-teal {
+        color: rgba(68, 131, 97, 1);
+        fill: rgba(68, 131, 97, 1);
+    }
+    .block-color-blue {
+        color: rgba(51, 126, 169, 1);
+        fill: rgba(51, 126, 169, 1);
+    }
+    .block-color-purple {
+        color: rgba(144, 101, 176, 1);
+        fill: rgba(144, 101, 176, 1);
+    }
+    .block-color-pink {
+        color: rgba(193, 76, 138, 1);
+        fill: rgba(193, 76, 138, 1);
+    }
+    .block-color-red {
+        color: rgba(212, 76, 71, 1);
+        fill: rgba(212, 76, 71, 1);
+    }
+    .block-color-default_background {
+        color: inherit;
+        fill: inherit;
+    }
+    .block-color-gray_background {
+        background: rgba(241, 241, 239, 1);
+    }
+    .block-color-brown_background {
+        background: rgba(244, 238, 238, 1);
+    }
+    .block-color-orange_background {
+        background: rgba(251, 236, 221, 1);
+    }
+    .block-color-yellow_background {
+        background: rgba(251, 243, 219, 1);
+    }
+    .block-color-teal_background {
+        background: rgba(237, 243, 236, 1);
+    }
+    .block-color-blue_background {
+        background: rgba(231, 243, 248, 1);
+    }
+    .block-color-purple_background {
+        background: rgba(244, 240, 247, 0.8);
+    }
+    .block-color-pink_background {
+        background: rgba(249, 238, 243, 0.8);
+    }
+    .block-color-red_background {
+        background: rgba(253, 235, 236, 1);
+    }
+    .select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+    .select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+    .select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+    .select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+    .select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+    .select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+    .select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+    .select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+    .select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+    .select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+    .select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+    .select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+    .select-value-color-pageGlass { background-color: undefined; }
+    .select-value-color-washGlass { background-color: undefined; }
+    
+    .checkbox {
+        display: inline-flex;
+        vertical-align: text-bottom;
+        width: 16;
+        height: 16;
+        background-size: 16px;
+        margin-left: 2px;
+        margin-right: 5px;
+    }
+    
+    .checkbox-on {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+    }
+    
+    .checkbox-off {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+    }
+        
+    </style></head><body><article id="fbc086b0-5166-4f48-816b-9693abbe3916" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🔖</span></div><h1 class="page-title">Useful sources</h1><p class="page-description"></p></header><div class="page-body"><nav id="fc6ba581-5107-4f2a-b892-2c86a92e5f54" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#1d551fd9-d18c-450e-9df8-769b8ad0ea44">Academia</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#4df4b98d-8ce9-431d-a163-aa8e86b4af87">Articles</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#3600fbb2-1a0b-4547-b66b-876f522dddb2">AI</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#6082c3f5-0a09-4132-815d-ad0dbf33597d">Hackathons</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#1262b6ad-6da2-8079-b6fb-c084d91500ea">Tech</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#0c046119-5d57-4b2e-9c36-7d8ffbd97045">LaTex</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#c056fe89-ea4a-491d-bef6-7e8d620b399b">Design</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#2fa32473-4f30-49cf-9192-14e2f4246ba6">Telegram</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#d2e11573-a8ed-4607-9c38-93c96c8afef4">For Work (general)</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#c4fb931a-46b3-4a7c-97e4-99bc51b7f535">Lifestyle</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#6cb3aa13-5db6-4569-940b-de116c04bdfa">Other</a></div></nav><h1 id="1d551fd9-d18c-450e-9df8-769b8ad0ea44" class="">Academia</h1><p id="aed44a65-8e73-4c6e-940a-af271ba0c164" class="">Работа с научными источниками (очень удобно): <a href="https://elicit.org/">https://elicit.org/</a> </p><p id="feb860de-67bb-4fbf-97d2-59882b9b7149" class="">Связанные научные исследования: <a href="https://www.connectedpapers.com/">https://www.connectedpapers.com/</a> </p><p id="ebae23ea-4c10-4ecf-9157-6ef1822ec70b" class="">Бесплатные (!) научные статьи: <a href="https://sci-hub.ru/">https://sci-hub.ru/</a> </p><p id="4a2656f0-81c4-4cc5-a568-252c3822b708" class="">Открытая бесплатная библиотека: <a href="https://openlibrary.org/">https://openlibrary.org/</a> </p><p id="366273bf-0550-4804-a0a2-f7f3131fbf28" class="">Объяснение фрагментов статей: <a href="https://www.explainpaper.com/">https://www.explainpaper.com/</a> </p><p id="93ccf1fe-278f-4b66-81b7-aadaf59c8b2f" class="">Скачивание и открытие книг, статей и т.д.: <a href="https://libgen.is/">https://libgen.is/</a> и <a href="https://libgen.li/">https://libgen.li/</a> (Library Genesis)</p><p id="32b2b045-3f90-4349-bfea-115c91ba46cb" class="">Бесплатные научно-популярные книги: <a href="https://vsenauka.ru/knigi/besplatnyie-knigi.html">https://vsenauka.ru/knigi/besplatnyie-knigi.html</a> </p><p id="f6624cfa-0e66-4812-9087-5ae0d12f3719" class="">Загрузка и анализ статей Arxiv: <a href="https://huggingface.co/spaces/taesiri/ClaudeReadsArxiv">https://huggingface.co/spaces/taesiri/ClaudeReadsArxiv</a> </p><p id="3329a5cf-7d24-4cb2-b466-5235360aeb29" class="">Цитаты из книг на английском по запросу: <a href="https://books.google.com/talktobooks/">https://books.google.com/talktobooks/</a> </p><p id="7d5eae69-05e9-4bef-a71e-bcbdb88116d9" class="">Бесплатные курсы для университета: <a href="https://freemoocs.com/MOOC.html">https://freemoocs.com/MOOC.html</a> </p><p id="ae5fc728-5a9b-4f2c-8829-c31467046d48" class="">Для создания картинок по биологии: <a href="https://www.biorender.com/">https://www.biorender.com</a> </p><p id="36ce1699-cdc9-406b-9981-7d313a2d431a" class="">Поиск книг (бесплатно, но с ВПН): <a href="https://ru.annas-archive.org/">https://ru.annas-archive.org/</a> </p><p id="5e5bc6e4-020c-4512-a317-037e06459f7d" class="">Поиск научных статей (по биологии вроде): <a href="https://www.biodiversitylibrary.org/">https://www.biodiversitylibrary.org/</a> </p><p id="13e52b55-1439-451c-8e33-59bc1d8b720a" class="">Онлайн-курсы от рос.университетов и не только с сертификатами: <a href="https://academika.ru/">https://academika.ru/</a> </p><p id="2131d4a9-2e4f-4bc8-a48d-ec552fbbbe8a" class="">Анализ PDF-файлов с помощью ИИ (саммари и прочее): <a href="https://www.chatpdf.com/">https://www.chatpdf.com/</a> </p><p id="da59e28d-f24b-4a95-af2a-2060232b03ff" class="">Расшифровка аудио бесплатно и качественно с ИИ: <a href="https://riverside.fm/transcription">https://riverside.fm/transcription</a> и <a href="https://huggingface.co/spaces/sanchit-gandhi/whisper-jax">https://huggingface.co/spaces/sanchit-gandhi/whisper-jax</a> </p><p id="ea7bdb34-2987-4edb-a9a7-0052e3c3cc15" class="">Anna’s Archive</p><p id="f7cb90b0-915e-421d-99b7-8e0b6bb8b9aa" class="">Z-Library</p><p id="5fe07c81-a566-48a3-a6c5-ecd088ac6c44" class="">Облако слов: <a href="https://www.wordclouds.com/">https://www.wordclouds.com/</a> </p><p id="0c6a9b42-6a37-4bde-91a8-50e784225c73" class="">Для поиска и чтения статей по теме (с ИИ): <a href="https://synthical.com/feed/new">https://synthical.com/feed/new</a> </p><p id="6a820c06-98c5-427a-97af-bf4cdfcb4dbd" class="">Статьи и портфолио Марии Глушаниной (на 2 курса старше): <a href="https://drive.google.com/drive/folders/156IPUwZtu3LP5aYZPBN29ka2e3QKBdhX">https://drive.google.com/drive/folders/156IPUwZtu3LP5aYZPBN29ka2e3QKBdhX</a> </p><p id="c6b060b7-08b6-4a48-85ca-4ec421bcbe36" class="">Журнал для публикации эссе и не только (от Сириуса): <a href="https://lit.sochisirius.ru/">https://lit.sochisirius.ru/</a> </p><p id="9f1cf77f-f019-4841-b33c-05b102b4b1fe" class="">Летняя школа: <a href="https://letnyayashkola.org/">https://letnyayashkola.org/</a> </p><p id="da84058d-5765-461b-b205-0e4b3595418a" class="">Brick of Knowledge: <a href="https://brickofknowledge.com/">https://brickofknowledge.com/</a> </p><p id="b95ed1c1-165e-4b99-b9ce-840d55875801" class="">Бот для поиска статей <a href="https://t.me/nexus_sk_bot">https://t.me/nexus_sk_bot</a> </p><p id="26b1a412-76c7-4355-a172-fbcdb738f86c" class="">Точный критерий Фишера (онлайн-калькулятор): <a href="https://www.quantitativeskills.com/sisa/statistics/fisher.htm">https://www.quantitativeskills.com/sisa/statistics/fisher.htm</a> </p><p id="fe06bdca-47a4-4552-8b4e-acd58d36c2ba" class="">Книга по статистике (VPN): <a href="http://umo.edu.ua/images/content/aspirantura/zabezp_discipl/sidorenko.pdf">http://umo.edu.ua/images/content/aspirantura/zabezp_discipl/sidorenko.pdf</a> </p><p id="7c1a1e80-8be4-473d-8d6f-0f8e0e5dc7af" class="">Эксперименты онлайн: <a href="https://farm.pcibex.net/">https://farm.pcibex.net/</a> </p><p id="a9105304-c268-4d6c-96de-0339c9cd8fd8" class="">Журнал по психологии: <a href="https://pedfak.tversu.ru/pages/578">https://pedfak.tversu.ru/pages/578</a> </p><p id="3258102c-5af6-46ab-8a41-be0fb408eeed" class="">Zotero для организации статей <a href="https://www.zotero.org/">https://www.zotero.org/</a></p><p id="e6a620d6-780b-4bfb-b585-f4a91ee90e66" class="">Для поиска литературы <a href="https://www.researchrabbit.ai/">https://www.researchrabbit.ai/</a></p><p id="a39a19e1-a6a3-4384-9ac9-4ca0afb423e4" class="">Очень классные научные инфографики на разные темы, в том числе ML &amp; AI: <a href="https://sunandstuff.com/">https://sunandstuff.com/</a></p><h1 id="4df4b98d-8ce9-431d-a163-aa8e86b4af87" class="">Articles</h1><p id="6d3a96f4-8b40-422f-b7f2-440db12d90b6" class="">Медиум: <a href="https://medium.com/">https://medium.com/</a> </p><p id="8d06f30f-5335-47a8-a016-051e51c9589c" class="">Хайтек ФМ: <a href="https://hightech.fm/">https://hightech.fm/</a></p><p id="610fc2fd-c44e-4d5e-8f60-c15c87cb23ab" class="">Neuro Networks: <a href="https://paperswithcode.com/">https://paperswithcode.com/</a></p><p id="99e9e2ce-ec25-48c8-9e7c-0ca106eaffe1" class="">Блог (создателя) Wolphram Alpha: <a href="https://www.stephenwolfram.com/">https://www.stephenwolfram.com/</a> </p><p id="8cf9fbc1-78b4-4fe8-8ba8-c5382ab5e68c" class="">Классный сайт со статьями: <a href="https://www.inliberty.ru/">https://www.inliberty.ru/</a> </p><p id="0e29da7b-5847-4dd0-b9f7-4485e8a8033c" class="">Сайт с исследованиями: <a href="https://elementy.ru/">https://elementy.ru/</a> </p><p id="4a80f3a6-1ba9-4a82-bba1-8c404421fc63" class="">Сайт Александра Маркова: <a href="https://www.evolbiol.ru/">https://www.evolbiol.ru/</a> </p><p id="0e5dab02-e766-4049-8648-eac9b98e49b3" class="">Научный журнал по биологии: <a href="https://biomolecula.ru/">https://biomolecula.ru/</a> </p><h1 id="3600fbb2-1a0b-4547-b66b-876f522dddb2" class="">AI</h1><p id="4074109e-abe7-4bac-8fc1-0eaed68c0295" class="">Обзор методов оптимизации: <a href="https://www.ruder.io/optimizing-gradient-descent/">https://www.ruder.io/optimizing-gradient-descent/</a> </p><p id="8b4f4de2-d3e0-421c-86a4-5fda26bdbd20" class="">Гайд по GPT-4 (разные запросы): <a href="https://doc.clickup.com/37456139/d/h/13q28b-324/e2a22b0c164b1f9">https://doc.clickup.com/37456139/d/h/13q28b-324/e2a22b0c164b1f9</a> </p><p id="895627fd-6653-4972-932b-38bedb1b6e98" class="">AI Alignment (links): <a href="https://docs.google.com/document/d/1r83tPGPDrBtrt2_ZTiDEdoxoBiefbuuOvhWxV-OHDzk/edit">https://docs.google.com/document/d/1r83tPGPDrBtrt2_ZTiDEdoxoBiefbuuOvhWxV-OHDzk/edit</a> </p><p id="31bbb5d8-d344-4fe5-a663-ca56a97547eb" class="">Создание промптов (запросов) для нейросетей - бесплатный гайд: <a href="https://www.promptingguide.ai/">https://www.promptingguide.ai/</a> </p><p id="a6a7d75b-e8be-4395-ab1c-4a0ad4bd051b" class="">Написание промптов (готовые промпты): <a href="https://snackprompt.com/">https://snackprompt.com/</a> </p><p id="33ba9868-5965-4682-816d-fa24315cdcce" class="">Бесплатный без регистрации ИИ: <a href="https://www.perplexity.ai/">https://www.perplexity.ai/</a> </p><p id="7a30086b-e97b-4a47-a2b5-e00c79c704f4" class="">Небольшие тесты от ИИ по темам (10 вопросов): <a href="https://joinplayroom.com/games/booom/">https://joinplayroom.com/games/booom/</a> </p><p id="a6a4555a-4938-45a0-8e2a-abecee4db9e5" class="">Генерация небольшого курса-лонгрида по теме с вопросами в конце: <a href="https://courseai.co/">https://courseai.co/</a> </p><p id="a2111ce2-cb5a-4cc6-b021-d0f5b05e9c9a" class="">Промпты для ИИ (картинка):</p><figure id="65f1941b-95f2-4cd3-b4d4-2a54546d35e9" class="image"><a href="Useful%20sources%20fbc086b051664f48816b9693abbe3916/Untitled.png"><img style="width:384px" src="Useful%20sources%20fbc086b051664f48816b9693abbe3916/Untitled.png"/></a></figure><figure id="2f032120-6b33-4ab8-9614-3a92c2822d07" class="image"><a href="Useful%20sources%20fbc086b051664f48816b9693abbe3916/2cda35e0cd2a3084874d41522f8e053eaa341834498fc7e98889287515c3b739.jpg"><img style="width:336px" src="Useful%20sources%20fbc086b051664f48816b9693abbe3916/2cda35e0cd2a3084874d41522f8e053eaa341834498fc7e98889287515c3b739.jpg"/></a></figure><p id="95bdd853-c8f5-4626-a9d9-6ff18287d4cb" class="">Разные боты, собранные в одном месте: <a href="https://poe.com/">https://poe.com/</a> </p><p id="9e27ea04-b831-428b-9aed-67d87b30f661" class="">Альтернативы платным сервисам:</p><figure id="4dc10e7a-bb1e-46fe-a95b-66bb9686e4df" class="image"><a href="Useful%20sources%20fbc086b051664f48816b9693abbe3916/Untitled%201.png"><img style="width:240px" src="Useful%20sources%20fbc086b051664f48816b9693abbe3916/Untitled%201.png"/></a></figure><p id="7afedd5e-5e8c-4230-8d63-e50841691846" class="">Перевод с озвучкой видео с ИИ: <a href="https://labs.heygen.com/video-translate">https://labs.heygen.com/video-translate</a> </p><p id="fc8b1952-306a-4288-86ff-3118c1208abf" class="">Статьи об ИИ (научные, в основном визуал): <a href="https://distill.pub/">https://distill.pub/</a> </p><p id="09ec234f-d3a8-4116-ba59-d9d9d6c27249" class="">Анализ PDF-файлов с помощью ИИ (саммари и прочее): <a href="https://www.chatpdf.com/">https://www.chatpdf.com/</a> </p><p id="5b22751a-cb04-4b08-9e38-31e06270bf12" class="">Расшифровка аудио бесплатно и качественно с ИИ: <a href="https://riverside.fm/transcription">https://riverside.fm/transcription</a>  </p><p id="5a9921ad-959e-4d7d-9915-e7c3a32d446c" class="">Статья-сравнение функций активации:</p><figure id="3983efe3-a5b8-4b09-97e0-8ab675b81182"><div class="source"><a href="Useful%20sources%20fbc086b051664f48816b9693abbe3916/2111.04020.pdf">2111.04020.pdf</a></div></figure><p id="ddedb4e1-0ad0-48ca-baf7-45a58f00e259" class="">Генерация лиц людей: <a href="https://thispersondoesnotexist.com/">https://thispersondoesnotexist.com/</a> </p><p id="6b63db47-1885-432d-8157-5ca02475a2c7" class="">Звуки птиц: <a href="https://experiments.withgoogle.com/ai/bird-sounds/view/">https://experiments.withgoogle.com/ai/bird-sounds/view/</a></p><p id="13046c36-9338-4259-9d11-81df8b012f3b" class="">Карта звуков по схожести: <a href="https://experiments.withgoogle.com/ai/drum-machine/view/">https://experiments.withgoogle.com/ai/drum-machine/view/</a> </p><h1 id="6082c3f5-0a09-4132-815d-ad0dbf33597d" class="">Hackathons</h1><ul id="d35fe9b1-e603-4345-b4f0-c79b0ba7d17a" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.xn--80aa3anexr8c.xn--p1ai/">Хакатоны.рф</a>;</li></ul><ul id="dca6bf43-3882-4c37-90b1-96b4b9e691c6" class="bulleted-list"><li style="list-style-type:disc"><a href="https://ods.ai/competitions">ods.ai</a>;</li></ul><ul id="c5afba64-6bfa-4213-a060-a7479e8c82c1" class="bulleted-list"><li style="list-style-type:disc"><a href="https://devpost.com/hackathons">Devpost</a>;</li></ul><ul id="b7304d3b-d932-4298-9062-2cd22c248858" class="bulleted-list"><li style="list-style-type:disc"><a href="https://codenrock.com/">Codenrock</a>;</li></ul><ul id="7aef09a3-a5b5-4c73-a319-1f8f49145e0b" class="bulleted-list"><li style="list-style-type:disc"><a href="https://hacklist.ru/">Hackathon list</a>;</li></ul><ul id="e1905d5e-e9ff-4010-bf80-711d4721ebf8" class="bulleted-list"><li style="list-style-type:disc"><a href="http://it-events.com/">IT-Events</a>;</li></ul><ul id="5857c9fe-7eb6-487e-90a8-cf1e47d1414d" class="bulleted-list"><li style="list-style-type:disc"><a href="https://tproger.ru/events/">Tproger</a>;</li></ul><ul id="0d8498cb-afc0-4e83-b82a-b245f1f21847" class="bulleted-list"><li style="list-style-type:disc"><a href="https://mlcontests.com/">ML Contests</a>;</li></ul><ul id="9c95ceb8-764b-4f61-91f9-eaacdbf62bdd" class="bulleted-list"><li style="list-style-type:disc"><a href="https://machinehack.com/hackathons">Machine Hack</a>;</li></ul><ul id="e9ed1582-c8c9-453f-87c3-f10c3e0c37cc" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.kaggle.com/">Kaggle</a></li></ul><h1 id="1262b6ad-6da2-8079-b6fb-c084d91500ea" class="">Tech</h1><p id="1262b6ad-6da2-80a6-b814-d090d77321f0" class="">Бесплатные инструменты для разработчиков и в целом tech: <a href="https://free-for.dev/">https://free-for.dev/</a> </p><h1 id="0c046119-5d57-4b2e-9c36-7d8ffbd97045" class="">LaTex</h1><p id="d087061b-6014-426b-8cfd-163db2ae4df2" class="">Преобразование формул в LaTex: <a href="https://mathpix.com/">https://mathpix.com/</a> </p><p id="d429a1d1-59aa-4df8-8119-c6401bb15152" class="">LaTex в нормальный текст: <a href="https://latexbase.com/">https://latexbase.com/</a> </p><p id="95ebe5e6-7cc3-474b-ae08-4169c6f64c75" class="">Крутая статья по LaTex: <a href="https://habr.com/ru/articles/723564/">https://habr.com/ru/articles/723564/</a> </p><p id="84a72f95-7ba2-4c17-a6e0-28613dfc3d86" class="">Книжка по LaTex: <a href="http://www.ccas.ru/voron/download/voron05latex.pdf">http://www.ccas.ru/voron/download/voron05latex.pdf</a> </p><h1 id="c056fe89-ea4a-491d-bef6-7e8d620b399b" class="">Design</h1><p id="17c004fb-b529-4303-9a36-a703c0aa4201" class="">Дизайн от Гугла с ссылками на Flutter &amp; Figma: <a href="https://m3.material.io/">https://m3.material.io/</a> </p><p id="f6ff316b-4604-4c2d-83fb-bdc2dc923326" class="">Иконки Чикина (очень много): <a href="https://sergeychikin.ru/365/">https://sergeychikin.ru/365/</a> </p><p id="1d33782c-390a-445a-93dc-ba4f257fddb5" class="">Создание сайта (бесплатный опен-сорс сервис): <a href="https://boltcms.io/">https://boltcms.io/</a> </p><h1 id="2fa32473-4f30-49cf-9192-14e2f4246ba6" class="">Telegram</h1><p id="79ea5d0a-6a08-4ec8-8a93-0fba1c712261" class="">Статистика телеграм-каналов: <a href="https://tgstat.ru/">https://tgstat.ru/</a> </p><p id="890f51ff-39a7-4ced-8d84-75f10afba8e8" class="">Телеграф для больших постов в Телеграме: <a href="https://telegra.ph/">https://telegra.ph/</a> </p><h1 id="d2e11573-a8ed-4607-9c38-93c96c8afef4" class="">For Work (general)</h1><p id="31260ff8-7fab-4da0-bdd1-1122ca871a73" class="">Вопросы клиентам: <a href="https://bureau.ru/about/welcome/">https://bureau.ru/about/welcome/</a> </p><p id="4503508b-cfa7-44af-af44-46884695170a" class="">Как сокращать ссылки в гугл-доках: <a href="https://support.bitly.com/hc/en-us/articles/360024372212-Can-I-integrate-Bitly-with-Google-Sheets-">https://support.bitly.com/hc/en-us/articles/360024372212-Can-I-integrate-Bitly-with-Google-Sheets-</a> </p><p id="a95113da-f28e-473d-8d8b-c215a01260ea" class="">Как оформлять CV: <a href="https://www.notion.so/c2092dd945014e72a55a55605c6be512?pvs=21">https://www.notion.so/CV-c2092dd945014e72a55a55605c6be512?pvs=4</a> </p><p id="ae9a53f5-5559-4ba9-9a52-c3fe105b360c" class="">Исследования специалистов ИТ <a href="https://devcrowd.ru/research/">https://devcrowd.ru/research/</a> </p><p id="0751bfe4-8014-4d81-8502-b9d2056c6bbe" class="">Где искать работу?</p><ul id="7debf1d8-3472-4596-8092-e22318930bac" class="bulleted-list"><li style="list-style-type:disc">буду, (<a href="https://budu.jobs/?ysclid=lk9k88j1t3797081372">https://budu.jobs/?ysclid=lk9k88j1t3797081372</a>) </li></ul><ul id="380d9f38-87d1-4479-811c-9a285683b316" class="bulleted-list"><li style="list-style-type:disc"><a href="https://t.me/budujobs">https://t.me/budujobs</a> </li></ul><ul id="cb52738c-bbda-43f8-94f6-86d8dbf8ac59" class="bulleted-list"><li style="list-style-type:disc">uptu.work, (<a href="https://uptu.work/">https://uptu.work/</a>) </li></ul><ul id="94c5abdf-2ee7-4203-92a1-c99dc498cd80" class="bulleted-list"><li style="list-style-type:disc">Вышка, (<a href="https://career.hse.ru/?ysclid=lk9kbb8dcq355144598">https://career.hse.ru/?ysclid=lk9kbb8dcq355144598</a>) </li></ul><ul id="26354ded-9362-4161-926e-3f22953258a8" class="bulleted-list"><li style="list-style-type:disc">grintern, (<a href="https://grintern.ru/?ysclid=lk9kc0g9y3120769934">https://grintern.ru/?ysclid=lk9kc0g9y3120769934</a>) </li></ul><ul id="851127d1-6502-4f6e-86b9-04005f45ae50" class="bulleted-list"><li style="list-style-type:disc">careerspace (<a href="https://careerspace.app/?ysclid=lk9kcnbves210070052">https://careerspace.app/?ysclid=lk9kcnbves210070052</a>)</li></ul><ul id="294abbd9-672e-431e-88b5-85506bba0d83" class="bulleted-list"><li style="list-style-type:disc"><a href="https://t.me/huggabletalents">https://t.me/huggabletalents</a> </li></ul><ul id="8f3ad839-6747-4edb-9d22-a9f44ae8772e" class="bulleted-list"><li style="list-style-type:disc"><a href="https://t.me/huggabletalents"> </a><a href="https://t.me/zarubezhom_jobs">https://t.me/zarubezhom_jobs</a></li></ul><ul id="e82267ae-0af7-43f9-b9c3-b493bdbe5739" class="bulleted-list"><li style="list-style-type:disc"><a href="https://t.me/addlist/qxiTyBCy5Jw1YjQy">https://t.me/addlist/qxiTyBCy5Jw1YjQy</a> - список каналов</li></ul><ul id="0895613b-e4c1-4bfa-b4f2-7173ff902842" class="bulleted-list"><li style="list-style-type:disc"></li></ul><h1 id="c4fb931a-46b3-4a7c-97e4-99bc51b7f535" class="">Lifestyle</h1><p id="4c2797e0-e330-4b52-a55f-7143bcfa7883" class="">Life Manifesto: <a href="https://www.notion.so/e0a80a9ff8de4145ab213119f03905e0?pvs=21">https://uberkinder.notion.site/Optimal-Performance-Manifesto-e0a80a9ff8de4145ab213119f03905e0</a> </p><p id="4b853a0c-073f-46a4-b60f-a2ac825470f7" class="">Shutdown Routine: <a href="https://www.notion.so/59e5b26888744df2a394b053fba3f868?pvs=21">https://uberkinder.notion.site/Shutdown-Routine-59e5b26888744df2a394b053fba3f868</a> </p><p id="7104c68e-a74c-41f0-aee1-a41b309efbdb" class="">Deadlines Manifesto: <a href="https://www.notion.so/f26ed9af885448229f263313c6411244?pvs=21">https://uberkinder.notion.site/Deadlines-101-f26ed9af885448229f263313c6411244</a> </p><p id="ff30324f-07bb-4bda-b861-a489ef71286f" class="">Writing Principles: <a href="https://www.notion.so/948f36868c2045e898c485668266d5eb?pvs=21">https://www.notion.so/My-Writing-Principles-948f36868c2045e898c485668266d5eb</a> </p><h1 id="6cb3aa13-5db6-4569-940b-de116c04bdfa" class="">Other</h1><p id="a24610ce-845e-407a-81f8-d7cb1859aff0" class="">Графики из Notion: <a href="https://notion2charts.com/dashboard">https://notion2charts.com/dashboard</a> </p><p id="b2e1bf30-5eb1-4ae5-81b7-2622b28c5291" class="">Книги по математике (подборка): <a href="https://telegra.ph/Kak-izuchit-matematiku-dlya-mashinnogo-obucheniya-i-analiza-dannyh-Podborka-knig-dlya-lyubogo-urovnya-10-15">https://telegra.ph/Kak-izuchit-matematiku-dlya-mashinnogo-obucheniya-i-analiza-dannyh-Podborka-knig-dlya-lyubogo-urovnya-10-15</a> </p><p id="436a7038-45fc-4fe1-b4de-2ca2cc30c4b4" class="">Карта звездного неба: <a href="https://in-space.ru/skyonline/">https://in-space.ru/skyonline/</a> </p><p id="b504ae60-ff67-41a6-abd5-ab0ec8fdb8c0" class="">Определение птиц по голосу: <a href="https://birdnet.cornell.edu/">https://birdnet.cornell.edu/</a> </p><p id="6999bd84-c503-40d0-8dce-7bc2965f95df" class="">Аудиокниги на немецком: <a href="https://desktop.amira-lesen.de/">https://desktop.amira-lesen.de/</a> </p><p id="16473f25-ce67-4f78-8a37-396f8eed05d4" class="">Комиксы на бизнес и компьютерные темы: <a href="https://marketoonist.com/">https://marketoonist.com/</a> </p><p id="a808ad09-46c2-4d95-853e-197515f3e142" class="">Бесплатные звуки и музыка: <a href="https://freesound.org/">https://freesound.org/</a> </p><p id="0faf87e1-565b-45ef-832c-957d4f237f4e" class="">Выборы 2024: <a href="https://maxkatz.ru/2024/">https://maxkatz.ru/2024/</a> и <a href="https://public.tableau.com/app/profile/roman.udot/viz/2024_03_17PresidentoftheRF/_">https://public.tableau.com/app/profile/roman.udot/viz/2024_03_17PresidentoftheRF/_</a> </p><p id="34ebefb6-711b-42ee-adcb-9854524c4219" class="">Игра FallacyMania (от Панчина про когнитивные искажения): <a href="http://fallacymania.com/downloads">http://fallacymania.com/downloads</a> </p><p id="1262b6ad-6da2-807d-9365-cc8fe2f30a90" class="">
+    </p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
